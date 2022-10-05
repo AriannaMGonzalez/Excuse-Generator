@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 import { left } from "@popperjs/core";
 
 function wordpicker(array) {
-  return array[Math.floor(Math.random() * whos.length)];
+  return array[Math.floor(Math.random() * length)];
 }
 let whos = ["The dog", "My grandma", "His turtle", "My bird"];
 let actions = ["ate", "peed", "crushed", "broke"];
@@ -23,8 +23,12 @@ let whens = [
 window.onload = function getRandomInt(max) {
   document.getElementById("excuse").innerHTML =
     wordpicker(whos) +
+    " " +
     wordpicker(actions) +
+    " " +
     wordpicker(whats) +
-    wordpicker(whens);
-  console.log();
+    " " +
+    wordpicker(whens) +
+    " ";
+  +console.log();
 };
