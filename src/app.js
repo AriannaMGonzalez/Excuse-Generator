@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 import { left } from "@popperjs/core";
 
 function wordpicker(array) {
-  return array[Math.floor(Math.random() * length)];
+  return array[Math.floor(Math.random() * array.length)];
 }
 let whos = ["The dog", "My grandma", "His turtle", "My bird"];
 let actions = ["ate", "peed", "crushed", "broke"];
